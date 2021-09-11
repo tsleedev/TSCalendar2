@@ -12,7 +12,17 @@
 		216F7CD06E06B8EE9AEB00168501D937 /* Pods-TSCalendar2_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6328D577762397A2703648CA772B17C /* Pods-TSCalendar2_Tests-dummy.m */; };
 		485ED13F294451986C508561B00A97AC /* Pods-TSCalendar2_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 13B451B5E27536368EFD4B0C387AD3BB /* Pods-TSCalendar2_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		748ABABA102C3E33C0D134CF269F4458 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		7FE6A7EBB27FE13C2D008E53ACB4828E /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939C7538B1F8BBA9C0B0F2A7465D38F4 /* ReplaceMe.swift */; };
+		90F951FE26ED239B0007B310 /* TSCalendarCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F951ED26ED222D0007B310 /* TSCalendarCalculator.swift */; };
+		90F951FF26ED239B0007B310 /* TSCalendarCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F951E826ED222D0007B310 /* TSCalendarCollectionView.swift */; };
+		90F9520026ED239B0007B310 /* TSCalendarConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F951EF26ED222D0007B310 /* TSCalendarConstraints.swift */; };
+		90F9520126ED239B0007B310 /* TSCalendarProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F951F126ED222D0007B310 /* TSCalendarProtocol.swift */; };
+		90F9520226ED239B0007B310 /* TSCalendarWeekCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F951F226ED222D0007B310 /* TSCalendarWeekCell.swift */; };
+		90F9520326ED239B0007B310 /* TSCalendarWeekdayHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F951EB26ED222D0007B310 /* TSCalendarWeekdayHeader.swift */; };
+		90F9520426ED239B0007B310 /* TSCalendarWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F951EA26ED222D0007B310 /* TSCalendarWeekView.swift */; };
+		90F9520526ED239B0007B310 /* TSCalendarDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F951EE26ED222D0007B310 /* TSCalendarDayView.swift */; };
+		90F9520626ED239B0007B310 /* TSCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F951EC26ED222D0007B310 /* TSCalendar.swift */; };
+		90F9520726ED239B0007B310 /* TSCalendarAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F951F026ED222D0007B310 /* TSCalendarAppearance.swift */; };
+		90F9520826ED239B0007B310 /* TSCalendarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F951E926ED222D0007B310 /* TSCalendarExtension.swift */; };
 		91E22ABA2729F5DF64E79CE1DE867D13 /* Pods-TSCalendar2_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A5683202A558FB00C5A5F0CD611FFA /* Pods-TSCalendar2_Example-dummy.m */; };
 		A7DF01AB98D1FCA16E93CC88A19CD6C1 /* Pods-TSCalendar2_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9075B4141A07A28F4DD6FD0CBE371575 /* Pods-TSCalendar2_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C5922B85F2DB287072F6A32FD190BBBF /* TSCalendar2-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ADAECBD4573D8DEEE5F067B9846C1F62 /* TSCalendar2-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -39,30 +49,40 @@
 /* Begin PBXFileReference section */
 		003E1DC80BC4B6BDBCB00A9514D5DFDD /* Pods-TSCalendar2_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSCalendar2_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		09A5683202A558FB00C5A5F0CD611FFA /* Pods-TSCalendar2_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TSCalendar2_Example-dummy.m"; sourceTree = "<group>"; };
-		0FC87ED943E8D97ABA689709DD381B5E /* TSCalendar2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TSCalendar2.framework; path = TSCalendar2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FC87ED943E8D97ABA689709DD381B5E /* TSCalendar2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TSCalendar2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B451B5E27536368EFD4B0C387AD3BB /* Pods-TSCalendar2_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TSCalendar2_Example-umbrella.h"; sourceTree = "<group>"; };
 		22101E9C4599B32470F4B26C0C823E3D /* Pods-TSCalendar2_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TSCalendar2_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		22FAC1369ACA808123D02C7080B57390 /* TSCalendar2.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TSCalendar2.modulemap; sourceTree = "<group>"; };
-		26991BC820366D4A1A4C511D4545F770 /* Pods_TSCalendar2_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TSCalendar2_Tests.framework; path = "Pods-TSCalendar2_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26991BC820366D4A1A4C511D4545F770 /* Pods_TSCalendar2_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSCalendar2_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2797A3399FBC206E46710EA231DF3F17 /* Pods-TSCalendar2_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TSCalendar2_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		3A02A5BDCC1651F1AC6570997413D2AF /* Pods_TSCalendar2_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TSCalendar2_Example.framework; path = "Pods-TSCalendar2_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A02A5BDCC1651F1AC6570997413D2AF /* Pods_TSCalendar2_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TSCalendar2_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AA28EF1CA9B0735504733B880E3B778 /* TSCalendar2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TSCalendar2.release.xcconfig; sourceTree = "<group>"; };
 		3EDAF856A392106660453D58A24FF79D /* Pods-TSCalendar2_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSCalendar2_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3F03DE38D9A88F698CE592A9CDBE147F /* Pods-TSCalendar2_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TSCalendar2_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		46077E2CDD3E1C83DF749AFDB95F8EB4 /* Pods-TSCalendar2_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TSCalendar2_Tests.modulemap"; sourceTree = "<group>"; };
-		69A4F86AD91C02CCB4A2EB507176D978 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		69A4F86AD91C02CCB4A2EB507176D978 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		7172B292F50B0DC48D918839D8E6E9DD /* TSCalendar2-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TSCalendar2-dummy.m"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		78EA50E27D59EE6C818A573F573B6513 /* Pods-TSCalendar2_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TSCalendar2_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7ED2927D0D986BB0C6428B9A2056BC38 /* Pods-TSCalendar2_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSCalendar2_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		810C4F74574E65CF377322BDF79E960B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		810C4F74574E65CF377322BDF79E960B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		8A0B13149C112402776174A102300914 /* Pods-TSCalendar2_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TSCalendar2_Example-Info.plist"; sourceTree = "<group>"; };
 		8A445B2FFA689CA6AC45EF14B7A67D41 /* Pods-TSCalendar2_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TSCalendar2_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9075B4141A07A28F4DD6FD0CBE371575 /* Pods-TSCalendar2_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TSCalendar2_Tests-umbrella.h"; sourceTree = "<group>"; };
-		939C7538B1F8BBA9C0B0F2A7465D38F4 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = TSCalendar2/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
+		90F951E826ED222D0007B310 /* TSCalendarCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSCalendarCollectionView.swift; path = TSCalendar2/Classes/TSCalendarCollectionView.swift; sourceTree = "<group>"; };
+		90F951E926ED222D0007B310 /* TSCalendarExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSCalendarExtension.swift; path = TSCalendar2/Classes/TSCalendarExtension.swift; sourceTree = "<group>"; };
+		90F951EA26ED222D0007B310 /* TSCalendarWeekView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSCalendarWeekView.swift; path = TSCalendar2/Classes/TSCalendarWeekView.swift; sourceTree = "<group>"; };
+		90F951EB26ED222D0007B310 /* TSCalendarWeekdayHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSCalendarWeekdayHeader.swift; path = TSCalendar2/Classes/TSCalendarWeekdayHeader.swift; sourceTree = "<group>"; };
+		90F951EC26ED222D0007B310 /* TSCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSCalendar.swift; path = TSCalendar2/Classes/TSCalendar.swift; sourceTree = "<group>"; };
+		90F951ED26ED222D0007B310 /* TSCalendarCalculator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSCalendarCalculator.swift; path = TSCalendar2/Classes/TSCalendarCalculator.swift; sourceTree = "<group>"; };
+		90F951EE26ED222D0007B310 /* TSCalendarDayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSCalendarDayView.swift; path = TSCalendar2/Classes/TSCalendarDayView.swift; sourceTree = "<group>"; };
+		90F951EF26ED222D0007B310 /* TSCalendarConstraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSCalendarConstraints.swift; path = TSCalendar2/Classes/TSCalendarConstraints.swift; sourceTree = "<group>"; };
+		90F951F026ED222D0007B310 /* TSCalendarAppearance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSCalendarAppearance.swift; path = TSCalendar2/Classes/TSCalendarAppearance.swift; sourceTree = "<group>"; };
+		90F951F126ED222D0007B310 /* TSCalendarProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSCalendarProtocol.swift; path = TSCalendar2/Classes/TSCalendarProtocol.swift; sourceTree = "<group>"; };
+		90F951F226ED222D0007B310 /* TSCalendarWeekCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TSCalendarWeekCell.swift; path = TSCalendar2/Classes/TSCalendarWeekCell.swift; sourceTree = "<group>"; };
 		9C8E0F57A97F04D2CAA190EE601B7CCD /* Pods-TSCalendar2_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TSCalendar2_Tests-Info.plist"; sourceTree = "<group>"; };
-		9CC8868F15DAA806ABB3A11CC368D045 /* TSCalendar2.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TSCalendar2.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9CC8868F15DAA806ABB3A11CC368D045 /* TSCalendar2.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TSCalendar2.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A6328D577762397A2703648CA772B17C /* Pods-TSCalendar2_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TSCalendar2_Tests-dummy.m"; sourceTree = "<group>"; };
 		A76A5477721B3576F0EA73A922B6A053 /* TSCalendar2-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TSCalendar2-Info.plist"; sourceTree = "<group>"; };
 		A7AFAADA56E84D59245AD32A660750DB /* TSCalendar2-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TSCalendar2-prefix.pch"; sourceTree = "<group>"; };
@@ -199,7 +219,17 @@
 		DB8A4327CF4B42A625B8083EA63148E3 /* TSCalendar2 */ = {
 			isa = PBXGroup;
 			children = (
-				939C7538B1F8BBA9C0B0F2A7465D38F4 /* ReplaceMe.swift */,
+				90F951EC26ED222D0007B310 /* TSCalendar.swift */,
+				90F951F026ED222D0007B310 /* TSCalendarAppearance.swift */,
+				90F951ED26ED222D0007B310 /* TSCalendarCalculator.swift */,
+				90F951E826ED222D0007B310 /* TSCalendarCollectionView.swift */,
+				90F951EF26ED222D0007B310 /* TSCalendarConstraints.swift */,
+				90F951EE26ED222D0007B310 /* TSCalendarDayView.swift */,
+				90F951E926ED222D0007B310 /* TSCalendarExtension.swift */,
+				90F951F126ED222D0007B310 /* TSCalendarProtocol.swift */,
+				90F951F226ED222D0007B310 /* TSCalendarWeekCell.swift */,
+				90F951EB26ED222D0007B310 /* TSCalendarWeekdayHeader.swift */,
+				90F951EA26ED222D0007B310 /* TSCalendarWeekView.swift */,
 				3CBA5FA150904003AE7524E809625A0B /* Pod */,
 				76413AC7B787279427CE3681E8BC0F58 /* Support Files */,
 			);
@@ -317,6 +347,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					50AE4F96BE31CFE1B513C9D431916606 = {
+						LastSwiftMigration = 1250;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -367,8 +402,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FE6A7EBB27FE13C2D008E53ACB4828E /* ReplaceMe.swift in Sources */,
+				90F9520226ED239B0007B310 /* TSCalendarWeekCell.swift in Sources */,
+				90F951FE26ED239B0007B310 /* TSCalendarCalculator.swift in Sources */,
+				90F951FF26ED239B0007B310 /* TSCalendarCollectionView.swift in Sources */,
+				90F9520526ED239B0007B310 /* TSCalendarDayView.swift in Sources */,
+				90F9520726ED239B0007B310 /* TSCalendarAppearance.swift in Sources */,
+				90F9520626ED239B0007B310 /* TSCalendar.swift in Sources */,
+				90F9520426ED239B0007B310 /* TSCalendarWeekView.swift in Sources */,
+				90F9520126ED239B0007B310 /* TSCalendarProtocol.swift in Sources */,
 				09AF9D030427013F15FDB255800BDF09 /* TSCalendar2-dummy.m in Sources */,
+				90F9520326ED239B0007B310 /* TSCalendarWeekdayHeader.swift in Sources */,
+				90F9520826ED239B0007B310 /* TSCalendarExtension.swift in Sources */,
+				90F9520026ED239B0007B310 /* TSCalendarConstraints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +456,7 @@
 			baseConfigurationReference = 8A445B2FFA689CA6AC45EF14B7A67D41 /* Pods-TSCalendar2_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -432,6 +478,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -552,15 +600,15 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TSCalendar2/TSCalendar2-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TSCalendar2/TSCalendar2-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MODULEMAP_FILE = "Target Support Files/TSCalendar2/TSCalendar2.modulemap";
 				PRODUCT_MODULE_NAME = TSCalendar2;
 				PRODUCT_NAME = TSCalendar2;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -572,6 +620,7 @@
 			baseConfigurationReference = 3EDAF856A392106660453D58A24FF79D /* Pods-TSCalendar2_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -593,6 +642,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -655,8 +705,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -677,15 +726,15 @@
 				GCC_PREFIX_HEADER = "Target Support Files/TSCalendar2/TSCalendar2-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/TSCalendar2/TSCalendar2-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
 				MODULEMAP_FILE = "Target Support Files/TSCalendar2/TSCalendar2.modulemap";
 				PRODUCT_MODULE_NAME = TSCalendar2;
 				PRODUCT_NAME = TSCalendar2;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
