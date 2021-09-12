@@ -13,6 +13,8 @@ class TSCalendarWeekCell: UICollectionViewCell {
     weak var weekView: TSCalendarWeekView!
     
     private weak var seperator: UIView!
+    
+    private let SUBVIEW_TAG = 1225
     private let constraint = TSCalendarConstraints()
     
     override init(frame: CGRect) {
@@ -33,6 +35,7 @@ class TSCalendarWeekCell: UICollectionViewCell {
     
     private func prepareSeperator() {
         let view = UIView()
+        view.tag = SUBVIEW_TAG
         view.backgroundColor = UIColor(red: 233/255, green: 233/255, blue: 233/255, alpha: 1)
         constraint.addSubview(view, toItem: self)
         self.seperator = view
@@ -42,6 +45,7 @@ class TSCalendarWeekCell: UICollectionViewCell {
     
     private func prepareWeekOfYear() {
         let lblWeekOfYear = UILabel()
+        lblWeekOfYear.tag = SUBVIEW_TAG
         lblWeekOfYear.text = "10"
         constraint.addSubview(lblWeekOfYear, toItem: self)
         self.lblWeekOfYear = lblWeekOfYear
@@ -54,6 +58,7 @@ class TSCalendarWeekCell: UICollectionViewCell {
     
     private func prepareWeekView() {
         let weekView = TSCalendarWeekView()
+        weekView.tag = SUBVIEW_TAG
         constraint.addSubview(weekView, toItem: self)
         self.weekView = weekView
         
@@ -82,7 +87,11 @@ class TSCalendarWeekCell: UICollectionViewCell {
         
         // "설정 > 손쉬운 사용 > 키보드 > 전체 키보드 접근" ON 되어 있을 경우 cell위에 view가 추가되 터치가 안되는 이슈로 직접 추가하지 않은 뷰는 제거되도록 처리
         if subviews.count > 3 {
-            subviews.last?.removeFromSuperview()
+            subviews.forEach { subview in
+                if subview.tag == SUBVIEW_TAG {
+                    subview.removeFromSuperview()
+                }
+            }
         }
     }
 }
