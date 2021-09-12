@@ -153,12 +153,12 @@ private extension TSCalendar {
     func addObserver() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(timeChanged(_:)),
-                                               name: UIApplication.significantTimeChangeNotification,
+                                               name: .NSCalendarDayChanged,
                                                object: nil)
     }
     
     func removeObserver() {
-        NotificationCenter.default.removeObserver(self, name: UIApplication.significantTimeChangeNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: .NSCalendarDayChanged, object: nil)
     }
     
     @objc func timeChanged(_ notification: Notification) {
