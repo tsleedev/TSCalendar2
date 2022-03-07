@@ -163,7 +163,9 @@ private extension TSCalendar {
     
     @objc func timeChanged(_ notification: Notification) {
         if !isSelectable { return }
-        reloadData()
+        DispatchQueue.main.async {
+            self.reloadData()
+        }
     }
 }
 
