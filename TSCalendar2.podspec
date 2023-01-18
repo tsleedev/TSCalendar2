@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TSCalendar2'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = 'A short description of TSCalendar2.'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'TSCalendar2/Classes/**/*'
+  s.source_files = 'Sources/TSCalendar2/Classes/**/*'
   
   # s.resource_bundles = {
   #   'TSCalendar2' => ['TSCalendar2/Assets/*.png']

@@ -1,5 +1,5 @@
 PODS:
-  - TSCalendar2 (0.1.0)
+  - TSCalendar2 (1.0.4)
 
 DEPENDENCIES:
   - TSCalendar2 (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  TSCalendar2: a1d9bc75bf52969dbf2da44e4e754e29f669d13b
+  TSCalendar2: c4e2620991f51ffbbfe51c806e317cba262ccc00
 
 PODFILE CHECKSUM: 86d867800fea1472d8e1dc799245d003e6afa926
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3
