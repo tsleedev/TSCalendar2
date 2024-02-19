@@ -1,23 +1,13 @@
 # TSCalendar2
 
-[![CI Status](https://img.shields.io/travis/tsleedev/TSCalendar2.svg?style=flat)](https://travis-ci.org/tsleedev/TSCalendar2)
-[![Version](https://img.shields.io/cocoapods/v/TSCalendar2.svg?style=flat)](https://cocoapods.org/pods/TSCalendar2)
-[![License](https://img.shields.io/cocoapods/l/TSCalendar2.svg?style=flat)](https://cocoapods.org/pods/TSCalendar2)
-[![Platform](https://img.shields.io/cocoapods/p/TSCalendar2.svg?style=flat)](https://cocoapods.org/pods/TSCalendar2)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
 ## Requirements
 
 ## Installation
 
-TSCalendar2 is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+To use TSCalendar2 with the Swift Package Manager, add the following to your Package.swift file.
 
-```ruby
-pod 'TSCalendar2'
+```swift
+.package(url: "https://github.com/tsleedev/TSCalendar2.git", .upToNextMajor(from: "1.0.5"))
 ```
 
 ## Author

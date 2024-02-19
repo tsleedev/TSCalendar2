@@ -1,6 +1,0 @@
-framework module TSCalendar2 {
-  umbrella header "TSCalendar2-umbrella.h"
-
-  export *
-  module * { export * }
-}
