@@ -17,16 +17,22 @@ public class TSCalendarAppearance: NSObject {
     public var weekOfYearWidth: CGFloat = 30
     
     public class Color {
+        public let selectedDate = SelectedDate()
         public let text = Text()
         public let bg = Background()
         public var seperator = UIColor(red: 233/255, green: 233/255, blue: 233/255, alpha: 1)
+        
+        public class SelectedDate {
+            public var circle: UIColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.4)
+            public var rectangle: UIColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.4)
+        }
         
         public class Text: NSObject {
             public var weekdayHeader: UIColor = UIColor(red: 153/255, green: 153/255, blue: 153/255, alpha: 1)
             public var sunday: UIColor = UIColor(red: 252/255, green: 79/255, blue: 78/255, alpha: 1)
             public var saturday: UIColor = UIColor(red: 74/255, green: 138/255, blue: 243/255, alpha: 1)
             public var weekday: UIColor = UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 1)
-            public var selectedDate: UIColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.4)
+            
             public var topRight: UIColor = UIColor(red: 153/255, green: 153/255, blue: 153/255, alpha: 1)
             public var iconText: UIColor = UIColor(red: 51/255, green: 51/255, blue: 51/255, alpha: 1)
             

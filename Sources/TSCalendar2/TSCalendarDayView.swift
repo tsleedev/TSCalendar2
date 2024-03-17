@@ -308,7 +308,7 @@ open class TSCalendarDayView: UIView {
         if selectedLayer.fillColor != cellFillColor {
             selectedLayer.fillColor = cellFillColor
         }
-        let cellBorderColor: CGColor =  appearance.color.text.selectedDate.cgColor
+        let cellBorderColor: CGColor =  appearance.color.selectedDate.circle.cgColor
         if selectedLayer.strokeColor != cellBorderColor {
             selectedLayer.strokeColor = cellBorderColor
         }
@@ -330,7 +330,7 @@ open class TSCalendarDayView: UIView {
             constraint.attributes(item: selectedDay, toItem: self, types: [.top, .bottom, .leading, .trailing])
         }
         
-        selectedDay.layer.borderColor = appearance.color.text.selectedDate.cgColor
+        selectedDay.layer.borderColor = appearance.color.selectedDate.rectangle.cgColor
         selectedDay.layer.borderWidth = 1
     }
     
